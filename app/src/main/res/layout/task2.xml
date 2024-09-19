@@ -1,0 +1,104 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Поля для введення параметрів -->
+        <EditText
+            android:id="@+id/edit_carbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вуглець, %"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edit_hydrogen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Водень, %"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edit_oxygen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Кисень, %"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edit_sulfur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Сірка, %"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edit_calorific_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Нижча теплота згоряння, МДж/кг"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edit_moisture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Вологість робочої маси, %"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edit_ash_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Зольність сухої маси, %"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edit_vanadium_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Вміст ванадію (V), мг/кг"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- Кнопка для розрахунку -->
+        <Button
+            android:id="@+id/calculate_button_task2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Розрахувати"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Поле для відображення результату -->
+        <TextView
+            android:id="@+id/result_text_task2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Результат:"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:gravity="left" />
+
+    </LinearLayout>
+</ScrollView>

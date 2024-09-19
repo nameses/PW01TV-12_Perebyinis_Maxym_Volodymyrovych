@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <!-- LinearLayout to organize the content inside the ScrollView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- EditText for HP -->
+        <EditText
+            android:id="@+id/edit_hp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="HP, %"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- EditText for CP -->
+        <EditText
+            android:id="@+id/edit_cp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="CP, %"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- EditText for SP -->
+        <EditText
+            android:id="@+id/edit_sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="SP, %"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- EditText for NP -->
+        <EditText
+            android:id="@+id/edit_np"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="NP, %"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- EditText for OP -->
+        <EditText
+            android:id="@+id/edit_op"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="OP, %"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- EditText for WP -->
+        <EditText
+            android:id="@+id/edit_wp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="WP, %"
+            android:inputType="numberDecimal" />
+
+        <!-- EditText for AP -->
+        <EditText
+            android:id="@+id/edit_ap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="AP, %"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Розрахувати" />
+
+        <!-- TextView for displaying the result -->
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Результат:"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
